@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesanan Masuk</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
+      <h2 class="text-xl font-bold text-gray-800">Pesanan Masuk</h2>
+      <button
+        class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+        onclick="goBack()"
+      >
+        Kembali
+      </button>
+    </nav>
+
+    <main class="p-6">
+      <div id="incoming-orders">
+        <!-- Incoming orders will be loaded here dynamically -->
+      </div>
+    </main>
+
+    <!-- Modal untuk memasukkan kode pengambilan -->
+    <div id="pickup-code-modal" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75">
+      <div class="bg-white p-6 rounded-lg shadow-lg max-w-md">
+        <h2 class="text-xl font-bold mb-4 text-gray-800">Verifikasi Kode Pengambilan</h2>
+        <input
+          type="text"
+          id="input-pickup-code"
+          placeholder="Masukkan Kode Pengambilan"
+          class="block w-full p-2 border border-gray-300 rounded mb-4"
+        />
+        <button
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          onclick="verifyPickupCode()"
+        >
+          Verifikasi
+        </button>
+        <button
+          class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 ml-2"
+          onclick="closePickupCodeModal()"
+        >
+          Batal
+        </button>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+      displayIncomingOrders();
+    </script>
+  </body>
+</html>

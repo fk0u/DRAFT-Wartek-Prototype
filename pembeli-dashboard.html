@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Pembeli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
+      <h2 class="text-xl font-bold text-gray-800">Dashboard Pembeli</h2>
+      <div>
+        <button
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="goToTenants()"
+        >
+          Lihat Tenant
+        </button>
+        <button
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          onclick="goToCart()"
+        >
+          Keranjang
+        </button>
+        <button
+          class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+          onclick="logout()"
+        >
+          Logout
+        </button>
+      </div>
+    </nav>
+
+    <main class="p-6">
+      <div class="text-center">
+        <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+          Selamat Datang di Warung Teknologi!
+        </h3>
+        <p class="text-gray-600 mb-6">
+          Pilih tenant dan pesan makanan favoritmu.
+        </p>
+      </div>
+
+      <section class="mb-8">
+        <h4 class="text-xl font-semibold mb-4 text-gray-800">
+          Rekomendasi Menu Hari Ini
+        </h4>
+        <div id="recommended-menu" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Rekomendasi menu akan ditampilkan di sini -->
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h4 class="text-xl font-semibold mb-4 text-gray-800">
+          Pembelian Terakhir Anda
+        </h4>
+        <div id="last-purchased-menu" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Menu pembelian terakhir akan ditampilkan di sini -->
+        </div>
+      </section>
+
+      <section>
+        <h4 class="text-xl font-semibold mb-4 text-gray-800">
+          Daftar Tenant
+        </h4>
+        <div id="tenant-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Daftar tenant akan ditampilkan di sini -->
+        </div>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+      // Menampilkan data saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", () => {
+        displayRecommendedMenu();
+        displayLastPurchasedMenu();
+        displayTenantList();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Penjual</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
+      <h2 class="text-xl font-bold text-gray-800">Dashboard Penjual</h2>
+      <button
+        class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+        onclick="logout()"
+      >
+        Logout
+      </button>
+    </nav>
+
+    <main class="p-6 grid grid-cols-1 gap-4">
+      <button
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        onclick="viewOrders()"
+      >
+        Lihat Pesanan Masuk
+      </button>
+      <button
+        class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
+        onclick="viewEarnings()"
+      >
+        Rekap Pendapatan
+      </button>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+      function viewOrders() {
+        window.location.href = "orders.html";
+      }
+
+      function viewEarnings() {
+        window.location.href = "earnings.html";
+      }
+    </script>
+  </body>
+</html>

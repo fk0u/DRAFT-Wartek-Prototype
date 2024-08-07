@@ -1,0 +1,143 @@
+{
+    "1": {
+      "name": "Dapur Bahimung",
+      "items": [
+        { "id": 1, "name": "Nasi Putih dan Lalapan", "price": 14300 },
+        { "id": 2, "name": "Nasi Putih dan Katsu", "price": 14300 },
+        { "id": 3, "name": "Nasi Goreng Telur dan Ayam Swir", "price": 14300 },
+        { "id": 4, "name": "Nasi Goreng Katsu", "price": 16500 },
+        { "id": 5, "name": "Nasi Goreng Hati Ayam", "price": 16500 },
+        { "id": 6, "name": "Nasi Goreng Ayam Goreng", "price": 16500 },
+        { "id": 7, "name": "Nasi Putih Katsu dan Telur", "price": 18700 },
+        { "id": 8, "name": "Nasi Katsu dan Hati", "price": 18700 },
+        { "id": 9, "name": "Nasi Putih Hati Pedas atau Kecap", "price": 18700 },
+        { "id": 10, "name": "Nasi Goreng Katsu dan Telur dan Sosis", "price": 22000 },
+        { "id": 11, "name": "Nasi Goreng Katsu dan Hati", "price": 22000 },
+        { "id": 12, "name": "Rice Bowl dan Telur", "price": 22000 },
+        { "id": 13, "name": "Katsu", "price": 11000 },
+        { "id": 14, "name": "Telur", "price": 4400 },
+        { "id": 15, "name": "Nasi Putih", "price": 4400 },
+        { "id": 16, "name": "Hati Original", "price": 5500 },
+        { "id": 17, "name": "Ayam Goreng", "price": 8800 }
+      ]
+    },
+    "2": {
+      "name": "Pesut Drink",
+      "items": [
+        { "id": 1, "name": "Tahu Bakso", "price": 5500 },
+        { "id": 2, "name": "Risol Mayo atau Sayur", "price": 6600 },
+        { "id": 3, "name": "Fish Roll atau Odeng", "price": 2200 },
+        { "id": 4, "name": "Nyemil A Menu Tambahan", "price": 3300 },
+        { "id": 5, "name": "Nyemil B Menu Tambahan", "price": 2200 },
+        { "id": 6, "name": "Es Teh", "price": 3300 },
+        { "id": 7, "name": "Es Teh Jumbo", "price": 5500 },
+        { "id": 8, "name": "Mineral", "price": 4400 },
+        { "id": 9, "name": "Fresh Milk Chocolate", "price": 6600 },
+        { "id": 10, "name": "Fresh Milk Vanilla", "price": 6600 },
+        { "id": 11, "name": "Fresh Milk jumbo", "price": 7700 },
+        { "id": 12, "name": "Fresh Milk Spesial Jumbo", "price": 8800 },
+        { "id": 13, "name": "Signature Drink Varian Coffee", "price": 5500 },
+        { "id": 14, "name": "Signature Drink Varian Chocolate", "price": 5500 },
+        { "id": 15, "name": "Signature Drink Varian Tea and Fruit", "price": 5500 },
+        { "id": 16, "name": "Signature Spesial Jumbo", "price": 8800 },
+        { "id": 17, "name": "Signature jumbo", "price": 6600 },
+        { "id": 18, "name": "Kue siput", "price": 3300 }
+      ]
+    },
+    "3": {
+      "name": "Dapur Etam",
+      "items": [
+        { "id": 1, "name": "Nasi Ayam Karamel", "price": 15000 },
+        { "id": 2, "name": "Nasi Ayam Ganza", "price": 15000 },
+        { "id": 3, "name": "Nasi Uduk Ayam Ganza", "price": 15000 },
+        { "id": 4, "name": "Nasi Uduk Ayam Karamel", "price": 15000 },
+        { "id": 5, "name": "Telur mata sapi", "price": 5000 },
+        { "id": 6, "name": "Seblak etam", "price": 12500 },
+        { "id": 7, "name": "Nasi putih", "price": 5500 },
+        { "id": 8, "name": "Roti sosis", "price": 6000 },
+        { "id": 9, "name": "Puding coklat", "price": 4000 },
+        { "id": 10, "name": "Nasi telur mata sapi", "price": 13200 },
+        { "id": 11, "name": "Nasi rica rica ayam", "price": 15000 }
+      ]
+    },
+    "4": {
+      "name": "Dapur Puteri Karang Melenu",
+      "items": [
+        { "id": 1, "name": "Nasi Ayam Richeese Level 1 - 5", "price": 16000 },
+        { "id": 2, "name": "Nasi Ayam Geprek Level 1 - 5", "price": 15000 },
+        { "id": 3, "name": "Mie Setan Level 1-5 Topping pilih di dropdown", "price": 13500 },
+        { "id": 4, "name": "Nasi Telur Geprek Level 1 - 5", "price": 11000 },
+        { "id": 5, "name": "Nasi Nugget Geprek Level 1 - 5", "price": 13500 },
+        { "id": 6, "name": "Roti Bakar Coklat Susu", "price": 6000 },
+        { "id": 7, "name": "Roti Bakar Keju Susu", "price": 6000 },
+        { "id": 8, "name": "Roti Bakar Ovaltine", "price": 6000 },
+        { "id": 9, "name": "Roti Bakar Blueberry", "price": 6000 },
+        { "id": 10, "name": "Roti Bakar Srikaya", "price": 6000 },
+        { "id": 11, "name": "Tambah Rasa Coklat", "price": 1000 },
+        { "id": 12, "name": "Tambah Rasa Keju", "price": 1000 },
+        { "id": 13, "name": "Nasi Putih", "price": 6000 },
+        { "id": 14, "name": "Telur", "price": 3000 },
+        { "id": 15, "name": "Pentol", "price": 2000 },
+        { "id": 16, "name": "Nugget", "price": 2000 },
+        { "id": 17, "name": "Sosis", "price": 2000 },
+        { "id": 18, "name": "Ayam Tanpa Nasi", "price": 10000 },
+        { "id": 19, "name": "Nasi Ayam Richeese Level 0", "price": 16000 },
+        { "id": 20, "name": "Nasi Ayam Geprek Level 0", "price": 15000 },
+        { "id": 21, "name": "Mie Original Topping pilih di dropdown", "price": 13500 }
+      ]
+    },
+    "5": {
+      "name": "Enggang Food",
+      "items": [
+        { "id": 1, "name": "Kentang Goreng Small", "price": 5500 },
+        { "id": 2, "name": "Kentang Goreng Large", "price": 11000 },
+        { "id": 3, "name": "Tahu Ikan Small", "price": 5500 },
+        { "id": 4, "name": "Cireng", "price": 5500 },
+        { "id": 5, "name": "Mix Otak dan Tahu Small", "price": 5500 },
+        { "id": 6, "name": "Mix Otak dan Tahu Large", "price": 11000 },
+        { "id": 7, "name": "Sempol Chrispy", "price": 5500 },
+        { "id": 8, "name": "Otak otak Small", "price": 5500 },
+        { "id": 9, "name": "Snack 1 Basreng Mini", "price": 1650 },
+        { "id": 10, "name": "Snack 2", "price": 2200 },
+        { "id": 11, "name": "Snack 3", "price": 3300 },
+        { "id": 12, "name": "Snack 4", "price": 4400 },
+        { "id": 13, "name": "Snack 5", "price": 5500 },
+        { "id": 14, "name": "Snack 6", "price": 6600 },
+        { "id": 15, "name": "Snack 10", "price": 11000 },
+        { "id": 16, "name": "Es Setrup Susu Medium", "price": 4400 },
+        { "id": 17, "name": "Es Setrup Medium", "price": 3300 },
+        { "id": 18, "name": "Milo Bland atau Biasa Medium Free 1 Toping", "price": 5500 },
+        { "id": 19, "name": "Milo Shake Medium Free 1 Toping", "price": 6600 },
+        { "id": 20, "name": "Milk Shake Medium Free 1 Toping", "price": 6600 },
+        { "id": 21, "name": "Ice Blend Medium Free 1 Toping", "price": 5500 },
+        { "id": 22, "name": "Float", "price": 6600 },
+        { "id": 23, "name": "Es Setrup Large", "price": 5500 },
+        { "id": 24, "name": "Milo Bland atau Biasa Large Free 1 Toping", "price": 6600 },
+        { "id": 25, "name": "Ice Bland Large Free 1 Toping", "price": 6600 },
+        { "id": 26, "name": "Milk Shake Large Free 1 toping", "price": 7700 },
+        { "id": 27, "name": "Es Setrup Susu Large", "price": 6600 },
+        { "id": 28, "name": "Telur gulung per tusuk", "price": 2200 },
+        { "id": 29, "name": "Otak Otak Large", "price": 11000 },
+        { "id": 30, "name": "Tahu Ikan Large", "price": 11000 },
+        { "id": 31, "name": "Es Sirup Jeruk atau Mangga", "price": 4400 }
+      ]
+    },
+    "6": {
+      "name": "Wartek Cell",
+      "items": [
+        { "id": 1, "name": "Permen", "price": 1100 },
+        { "id": 2, "name": "Snack chocolatos", "price": 2200 },
+        { "id": 3, "name": "Tisu kering", "price": 2700 },
+        { "id": 4, "name": "Paket D", "price": 3300 },
+        { "id": 5, "name": "Buku tulis", "price": 4400 },
+        { "id": 6, "name": "Buku gambar", "price": 5500 },
+        { "id": 7, "name": "Pulpen", "price": 3300 },
+        { "id": 8, "name": "Tipe-X", "price": 3300 },
+        { "id": 9, "name": "Kacu Pramuka", "price": 15500 },
+        { "id": 10, "name": "Kaos kaki", "price": 15500 },
+        { "id": 11, "name": "Pensil", "price": 2700 },
+        { "id": 12, "name": "Penghapus", "price": 2200 }
+      ]
+    }
+  }
+  

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Tenant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
+      <h2 class="text-xl font-bold text-gray-800">List Tenant</h2>
+      <button
+        class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+        onclick="goBack()"
+      >
+        Kembali
+      </button>
+    </nav>
+
+    <main class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Tenant cards -->
+      <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">Dapur Bahimung</h3>
+        <p class="text-sm text-gray-600">Menyediakan masakan Nusantara.</p>
+        <button
+          class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="viewMenu(1)"
+        >
+          Lihat Menu
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">
+          Pesut Drink and Coffee
+        </h3>
+        <p class="text-sm text-gray-600">Aneka minuman dan kopi.</p>
+        <button
+          class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="viewMenu(2)"
+        >
+          Lihat Menu
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">Dapur Etam</h3>
+        <p class="text-sm text-gray-600">
+          Makanan tradisional Kalimantan.
+        </p>
+        <button
+          class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="viewMenu(3)"
+        >
+          Lihat Menu
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">
+          Dapur Puteri Karang Melenu
+        </h3>
+        <p class="text-sm text-gray-600">
+          Masakan Melayu dan daerah.
+        </p>
+        <button
+          class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="viewMenu(4)"
+        >
+          Lihat Menu
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">Enggang Food</h3>
+        <p class="text-sm text-gray-600">Makanan khas Kalimantan.</p>
+        <button
+          class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="viewMenu(5)"
+        >
+          Lihat Menu
+        </button>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold text-gray-800">Wartek Cell</h3>
+        <p class="text-sm text-gray-600">
+          Warung Tegal dan makanan cepat saji.
+        </p>
+        <button
+          class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="viewMenu(6)"
+        >
+          Lihat Menu
+        </button>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+      function viewMenu(tenantId) {
+        // Redirect to tenant menu page with tenantId
+        window.location.href = `tenant-menu.html?tenantId=${tenantId}`;
+      }
+    </script>
+  </body>
+</html>

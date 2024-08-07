@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfirmasi Pesanan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
+      <h2 class="text-xl font-bold text-gray-800">Konfirmasi Pesanan</h2>
+      <button
+        class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+        onclick="goBack()"
+      >
+        Kembali
+      </button>
+    </nav>
+
+    <main class="p-6">
+      <!-- Order confirmation details -->
+      <div class="bg-white p-4 rounded shadow-md mb-4">
+        <h3 class="text-lg font-semibold mb-2">Pesanan Anda</h3>
+        <ul class="list-disc list-inside" id="order-summary">
+          <!-- Order items will be loaded here dynamically -->
+        </ul>
+        <p id="order-total" class="text-sm text-gray-600 mt-2">Total: Rp0</p>
+        <h3 class="text-lg font-semibold mt-4">Metode Pembayaran</h3>
+        <button
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mr-2"
+          onclick="selectPaymentMethod('Pembayaran di Kasir')"
+        >
+          Pembayaran di Kasir
+        </button>
+        <button
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onclick="selectPaymentMethod('QRIS')"
+        >
+          Pembayaran Digital (EWallet, QRIS)
+        </button>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+      const orderHistory = JSON.parse(localStorage.getItem("orderHistory")) || [];
+      const lastOrder = orderHistory[orderHistory.length - 1];
+      const orderSummary = document.getElementById("order-summary");
+
+      if (lastOrder) {
+        lastOrder.items.forEach((item) => {
+          const orderItem = document.createElement("li");
+          orderItem.textContent = `${item.name} - Rp${item.price}`;
+          orderSummary.appendChild(orderItem);
+        });
+
+        document.getElementById("order-total").textContent = `Total: Rp${lastOrder.total}`;
+      }
+    </script>
+  </body>
+</html>

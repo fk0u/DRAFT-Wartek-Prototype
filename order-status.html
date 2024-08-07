@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Status Pesanan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
+      <h2 class="text-xl font-bold text-gray-800">Status Pesanan</h2>
+      <button
+        class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+        onclick="goBack()"
+      >
+        Kembali
+      </button>
+    </nav>
+
+    <main class="p-6">
+      <!-- Order status -->
+      <div class="bg-white p-4 rounded shadow-md mb-4">
+        <h3 class="text-lg font-semibold mb-2">Status Pesanan Anda</h3>
+        <p id="order-status" class="text-sm text-gray-600">
+          Menunggu Pembayaran...
+        </p>
+        <p class="text-sm text-gray-600">Metode Pembayaran: <span id="payment-method">Belum dipilih</span></p>
+        <p class="text-sm text-gray-600">Kode Pengambilan: <span id="pickup-code">XXXXXX</span></p>
+      </div>
+      <button
+        class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        onclick="completeOrder()"
+      >
+        Pesanan Selesai
+      </button>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+      displayOrderStatus();
+    </script>
+  </body>
+</html>

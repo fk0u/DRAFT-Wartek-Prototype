@@ -1,0 +1,10 @@
+{
+    "sellers": [
+        { "username": "tenant1", "password": "tenant1", "name": "Dapur Bahimung" },
+        { "username": "tenant2", "password": "tenant2", "name": "Pesut Drink" },
+        { "username": "tenant3", "password": "tenant3", "name": "Dapur Etam" },
+        { "username": "tenant4", "password": "tenant4", "name": "Dapur Puteri Karang Melenu" },
+        { "username": "tenant5", "password": "tenant5", "name": "Enggang Food" },
+        { "username": "tenant6", "password": "tenant6", "name": "Wartek Cell" }
+    ]
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Tenant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white p-4 shadow-md flex justify-between items-center">
+      <h2 class="text-xl font-bold text-gray-800">Menu Tenant</h2>
+      <button
+        class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+        onclick="goBack()"
+      >
+        Kembali
+      </button>
+    </nav>
+
+    <main
+      class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      id="menu-items"
+    >
+      <!-- Menu items will be loaded here dynamically -->
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+      // Tunggu hingga dokumen dimuat sepenuhnya
+      document.addEventListener("DOMContentLoaded", async () => {
+        // Pastikan data JSON sudah dimuat
+        await loadMenuData();
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const tenantId = parseInt(urlParams.get("tenantId"));
+
+        const menuItems = getMenuItems(tenantId);
+        const menuContainer = document.getElementById("menu-items");
+
+        if (menuItems.length === 0) {
+          menuContainer.innerHTML = "<p class='text-gray-600'>Menu tidak tersedia.</p>";
+          return;
+        }
+
+        menuItems.forEach((item) => {
+          const menuItem = document.createElement("div");
+          menuItem.className = "bg-white p-4 rounded shadow-md";
+          menuItem.innerHTML = `
+            <h3 class="text-lg font-semibold">${item.name}</h3>
+            <p class="text-sm text-gray-600">Harga: Rp${item.price}</p>
+            <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" onclick="addToCart(${tenantId}, ${item.id})">Tambah ke Keranjang</button>
+          `;
+          menuContainer.appendChild(menuItem);
+        });
+      });
+    </script>
+  </body>
+</html>
