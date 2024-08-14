@@ -1,6 +1,6 @@
 {
     "buyers": [
-      { "nisn": "1234567890", "password": "1234567890", "name": "Pembeli 1" },
+      { "nisn": "1234567890", "password": "1234567890", "name": "Ghani Demo" },
       { "nisn": "0987654321", "password": "0987654321", "name": "Pembeli 2" }
     ]
 }
