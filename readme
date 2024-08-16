@@ -1,0 +1,17 @@
+Waitlist
+
+1. Fix Bugs
+2. Menambahkan sistem untuk bisa memilih varian makanan atau minuman, atau level makanan dan jumlah seperti di aplikasi gofood
+3. menambahkan akun pembeli
+4. menambahkan fitur baru dan memperbaiki tampilannya lebih memiliki nuansa yang baik untuk pembeli
+5. Memperbaiki fitur admin kasir agar halaman admin kasir bisa bekerja.
+6. Memperbaiki halaman dashboard, halaman awal
+7. Menambahkan Splash Screen untuk di awal
+8. Memperbaiki fitur pembayaran sehingga dapat di verifikasi. saat pembayaran digital user harus mengirimkan bukti pembayaran dan di verifikasi oleh admin kasir. dan jika sudah di verifikasi maka pembeli akan mendapatkan kode pengambilan
+9. Menambahkan fitur chat dengan penjual agar dapat mengkonfirmasi pesanan jadi anti salah2
+10. Menambahkan fitur rating
+11. Menambahkan fitur estimasi makanan/minuman selesai di siapkan
+12. Menambahkan fitur Ring on Time yang dimana jika makanan/minuman selesai di siapkan dan sudah siap di ambil maka Hp Pembeli akan mengeluarkan bunyi
+13. Menambahkan fitur untuk mengirimkan notifikasi ke penjual jika ada pesanan
+14. Memperbaiki fitur Rekomendasi dan Daftar tenant yang ada di dashboard
+15. Menambahkan fitur untuk mengirimkan notifikasi penyemangat hari dan rekomendasi menu hari ini ke pembeli.
